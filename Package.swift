@@ -15,7 +15,14 @@ let package = Package(
     targets: [
         .target(
             name: "CircleProgressView",
-            path: "CircleProgressView"
+            path: "CircleProgressView",
+            exclude: [
+                "AppDelegate.swift",
+                "ViewController.swift",
+                "Base.lproj",
+                "Images.xcassets",
+                "Info.plist"
+            ]
         ),
         .testTarget(
             name: "CircleProgressViewTests",
